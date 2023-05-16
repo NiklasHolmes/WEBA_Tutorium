@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="design.css">
+<!--
+    https://www.w3schools.com/howto/howto_js_todolist.asp
+-->
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">Meine Reiseziele <i class="fas fa-suitcase"></i></h2>
+  <!--<span>Das ist eine unnötige Info</span>-->
+  <input type="text" id="InputDestination" placeholder="Destination...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="destinationList">
+    <!--just delete all if empty list needed-->
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
+  <li>Buy eggs</li>
+  <li>Read a book</li>
+  <li>Organize office</li>
+
+</ul>
+
+<script type="text/javascript" src="ourJSfile.js"></script>
+
+</body>
+</html>
