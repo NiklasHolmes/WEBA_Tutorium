@@ -1,17 +1,19 @@
-// über alle Reiseziele drüberiteriern => close Button hinzufügen
+// iterate over all list elements + add delete button
 var myNodelist = document.getElementsByTagName("LI");
 for (var i = 0; i < myNodelist.length; i++) {
     addCloseButtonToElement(myNodelist[i]);
 }
 
+// add close button to every list element
 function addCloseButtonToElement(element) {
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7"); // × Malzeichen => \u00D7
     span.className = "close";
+    span.tabIndex = "0.5"
     span.appendChild(txt);
     element.appendChild(span);
 
-    // löschen/verstecken des Elements bei Klicken auf ×
+    // delete / hide element with ×
     span.onclick = function() {
         var div = this.parentElement;
         div.style.display = "none";
@@ -19,6 +21,7 @@ function addCloseButtonToElement(element) {
     }
 }
 
+// make list elements (un)checkable
 var destinationList = document.querySelector('ul');
 destinationList.addEventListener('click', function(destinationElement) {
     if (destinationElement.target.tagName === 'LI') {
@@ -26,6 +29,7 @@ destinationList.addEventListener('click', function(destinationElement) {
     }
 }, false);
 
+// create new list element
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("InputDestination").value;
