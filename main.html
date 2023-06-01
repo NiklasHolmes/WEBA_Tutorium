@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!--
+  https://fontawesome.com/v4/icon/suitcase
+-->
+
 <!--
     https://www.w3schools.com/howto/howto_js_todolist.asp
 -->
@@ -11,15 +17,15 @@
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">Meine Reiseziele <i class="fas fa-suitcase"></i></h2>
-  <!--<span>Das ist eine unnötige Info</span>-->
-  <input type="text" id="InputDestination" placeholder="Destination...">
-  <span onclick="newElement()" class="addBtn">Add</span>
+  <h2 style="margin:5px">Meine Reiseziele <i aria-label="Koffer Icon" class="fas fa-suitcase"></i> </h2>
+  <!--<span aria-hidden="true">Das ist eine unnötige Info</span>-->
+  <input aria-label="Destination placeholder" type="text" id="InputDestination" placeholder="Destination...">
+  <span tabindex="0" onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="destinationList">
     <!--just delete all if empty list needed-->
-  <li>Hit the gym</li>
+  <li tabindex="0">Hit the gym</li>
   <li class="checked">Pay bills</li>
   <li>Meet George</li>
   <li>Buy eggs</li>
@@ -28,7 +34,8 @@
 
 </ul>
 
-<script type="text/javascript" src="ourJSfile.js"></script>
+<script type="text/javascript" src="ourJSfile2.js"></script>
+
 
 </body>
 </html>
