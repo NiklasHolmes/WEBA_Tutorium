@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalender</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="calendarDesign.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calendarFunctions.js"></script>
+</head>
+
+<body>
+<div class="calendar-container">
+    <div id="calendar" class="calendar"></div>
+
+    <div class="calendar-buttons">
+        <button id="prevMonth">Vorheriger Monat</button>
+        <button id="nextMonth">Nächsten Monat</button>
+
+        <div id="eventForm">
+            <h3>Neues Event hinzufügen</h3>
+            <input type="text" id="eventDate" placeholder="Datum (YYYY-MM-DD)" value="2023-06-01">
+            <input type="text" id="eventTitle" placeholder="Titel" value="Schwimmen gehen">
+            <button id="addEvent">Hinzufügen</button>
+        </div>
+        <h3>Events für den ausgewählten Tag: </h3>
+        <div id="eventContainer"></div>
+
+    </div>
+
+    <!--
+    <table id="table1">
+        <tr>
+        <th>Das ist hardcoded HTML</th>
+        </tr>
+    </table>
+    <div id="tableExample"></div>
+    -->
+
+</div>
+
+</body>
+</html>
