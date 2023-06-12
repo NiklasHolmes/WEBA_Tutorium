@@ -121,3 +121,20 @@ input {
   background-color: #bbb;
 }
 
+.animal-table {
+  width: 50%; /* Begrenzt die Breite auf 50% */
+  margin: 0 auto; /* Zentriert die Tabelle horizontal */
+  border-collapse: collapse;
+}
+
+.animal-table th,
+.animal-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.animal-table th {
+  background-color: #f2f2f2;
+}
+

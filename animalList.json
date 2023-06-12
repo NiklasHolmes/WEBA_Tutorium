@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Benjamin Blümchen",
+    "animal": "Elephant",
+    "age": 50
+  },
+  {
+    "id": 2,
+    "name": "Leonardo",
+    "animal": "Ninja Turtle",
+    "age": 20
+  },
+  {
+    "id": 3,
+    "name": "Michelangelo",
+    "animal": "Ninja Turtle",
+    "age": 20
+  },
+  {
+    "id": 4,
+    "name": "Susi Silver",
+    "animal": "Dog",
+    "age": 30
+  },
+  {
+    "id": 5,
+    "name": "Strolchi Strolch",
+    "animal": "Dog",
+    "age": 31
+  }
+]
